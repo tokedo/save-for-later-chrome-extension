@@ -1,0 +1,32 @@
+<!-- popup.html -->
+<!-- Author: Anatoly Zaytsev -->
+<!-- Version: 1.0 -->
+<!-- Description: Popup for the Save For Later Chrome extension. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Save For Later</title>
+    <style>
+      body {
+        width: 350px;
+        overflow-y: auto;
+      }
+      .link-wrapper {
+        margin-bottom: 5px;
+      }
+      .link-button-container {
+        display: flex;
+        align-items: center;
+      }
+      button {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="saveForLater">Save For Later</button>
+    <div id="savedTabsContainer"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
