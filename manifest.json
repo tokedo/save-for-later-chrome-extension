@@ -1,0 +1,26 @@
+// manifest.json
+// Author: Anatoly Zaytsev
+// Version: 1.0
+// Description: Save multiple tabs for later and reopen them with a single click.
+
+{
+  "manifest_version": 3,
+  "name": "Save For Later",
+  "version": "1.0",
+  "description": "Save multiple tabs for later and reopen them with a single click.",
+  "icons": {
+    "48": "icon.png" // Icon file for the extension
+  },
+  "action": {
+    "default_icon": "icon.png", // Default icon for the extension
+    "default_popup": "popup.html", // Default popup for the extension
+    "default_title": "Save For Later" // Default title for the extension
+  },
+  "permissions": [
+    "tabs", // Request permission to access tabs
+    "storage" // Request permission to access storage
+  ],
+  "background": {
+    "service_worker": "background.js" // Background service worker script
+  }
+}
